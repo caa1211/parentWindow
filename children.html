@@ -6,10 +6,15 @@
 </head>
 <body>
 It's children
+<br>
 <button id="btn">	
 	chang parent color
 </button>
-
+<br>
+<button id="resetBtn">	
+	reset parent color
+</button>
+<br>
 <button id="closebtn">	
  close
 </button>
@@ -24,5 +29,10 @@ $("#closebtn").click(function(){
 $("#btn").click(function(){
     window.opener.changColor();
 });
+
+$("#reset").click(function(){
+    window.opener.resetColor();
+});
+
 </script>
 </html>
