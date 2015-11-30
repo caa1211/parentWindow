@@ -22,14 +22,17 @@ function getRandomColor() {
     return color;
 }
 
+// Can be called by children: window.opener.changColor();
 window.changColor = function(){
     $("body").css("background", getRandomColor());
 }
 
+// Can be called by children: window.opener.resetColor();
 function resetColor() {
 	$("body").css("background", "white");
 }
 
+// Can be called by children: window.opener.alertSomething();
 this.alertSomething = function(str){
 		alert(str);
 };
