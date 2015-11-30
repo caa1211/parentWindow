@@ -1,0 +1,24 @@
+
+<!doctype html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body style="width: 100%; height: 500px; background: gray;">
+It's parent
+<button id="btn">	
+	open
+</button>
+
+</body>
+
+<script>
+window.changeColor = function(){
+    $("body").css("background", "pink");
+}
+
+$("#btn").click(function(){
+	window.open("children.html", 'Yahoo', config='height=500,width=500');
+});
+</script>
+</html>
