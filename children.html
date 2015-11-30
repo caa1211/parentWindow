@@ -15,6 +15,10 @@ It's children
 	reset parent color
 </button>
 <br>
+<button id="alertBtn">	
+	someAlert
+</button>
+<br>
 <button id="closebtn">	
  close
 </button>
@@ -33,6 +37,11 @@ $("#btn").click(function(){
 $("#resetBtn").click(function(){
     window.opener.resetColor();
 });
+
+$("#alertBtn").click(function(){
+    window.opener.document.alertSomething();
+});
+
 
 </script>
 </html>
